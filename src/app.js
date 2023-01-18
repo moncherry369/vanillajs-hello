@@ -18,7 +18,7 @@ function generateCard() {
     }
     suit.innerHTML = randomSuit
     });
-     let CardIMG = document.querySelector("#CardIMG");
+// Card NUMBER AKA VALUE //
     let cardValue = [
       "A",
       "2",
@@ -40,9 +40,9 @@ function generateCard() {
     let totalValue = cardValue.length;
     let shuffleValueIndex = Math.floor(shuffleValue * totalValue);
     let randomValue = cardValue[shuffleValueIndex]
-    let CardValueElement = document.querySelector(".number");
+    let CardValueElements = document.querySelector(".number");
     
-    CardValueElement.innerHTML = randomValue;
+    CardValueElements.innerHTML = randomValue;
 
 }
 
